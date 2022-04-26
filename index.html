@@ -4,72 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大作业</title>
+    <title>SSPai</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="js/index.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
     <!-- 头部 -->
     <div id="header">
         <!-- 头部tabs -->
-        <script>
-            $(function () {
-
-                //mouseover：鼠标经过事件
-                //mouseout:鼠标离开事件
-
-                //mouseenter:鼠标进入事件
-                //mouseleave：鼠标离开事件
-
-                var $li = $(".headTab");
-
-                //给li注册鼠标经过事件，让自己的ul显示出来
-                $li.mouseenter(function () {
-                    //找到所有的儿子，并且还得是ul
-                    $(this).children("ul").show();
-                });
-
-                $li.mouseleave(function () {
-                    $(this).children("ul").hide();
-                });
-
-
-            });
-        </script>
-
         <div class="htab">
             <ul class="htabTop">
-                <!-- <li>
+                <li class="headTab">
                     <h1><a href="index.html"><img src="image/Misaka.jpg" alt=" " class="logo"></a></h1>
-                </li> -->
+                </li>
                 <li class="headTab">
                     <a href="">Matrix 社区</a>
                     <ul class="htabBottom">
-                        <li><a href="">社区广场</a></li>
-                        <li><a href="">一派</a></li>
+                        <div>
+                            <li><a href="list.html">社区广场</a></li>
+                            <li><a href="">一派</a></li>
+                        </div>
                     </ul>
                 </li>
                 <li class="headTab"><a href="">付费订阅</a></li>
                 <li class="headTab">
                     <a href="">特别策划</a>
                     <ul class="htabBottom">
-                        <li>aaaaa</li>
-                        <li>bbb</li>
+                        <div>
+                            <li><a href="">话题广场</a></li>
+                            <li><a href="">相机陈列馆</a></li>
+                        </div>
                     </ul>
                 </li>
                 <li class="headTab"><a href="">Pi Store</a></li>
                 <li class="headTab"><a href="">Tron 计划</a></li>
-                <!-- <li><button class="btn">登录</button></li> -->
+                <li><button class="btn">登录</button></li>
             </ul>
-            <!-- <div class="htabBottom">
-                <ul>
-                    <li class="headLi1"><a href=""></a></li>
-                    <li class="headLi2"><a href=""></a></li>
-                </ul>
-            </div> -->
-
         </div>
 
         <!-- 头部横幅 -->
