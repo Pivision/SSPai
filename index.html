@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大作业</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <!-- 头部tabs -->
+        <script>
+            $(function () {
+
+                //mouseover：鼠标经过事件
+                //mouseout:鼠标离开事件
+
+                //mouseenter:鼠标进入事件
+                //mouseleave：鼠标离开事件
+
+                var $li = $(".headTab");
+
+                //给li注册鼠标经过事件，让自己的ul显示出来
+                $li.mouseenter(function () {
+                    //找到所有的儿子，并且还得是ul
+                    $(this).children("ul").show();
+                });
+
+                $li.mouseleave(function () {
+                    $(this).children("ul").hide();
+                });
+
+
+            });
+        </script>
+
+        <div class="htab">
+            <ul class="htabTop">
+                <!-- <li>
+                    <h1><a href="index.html"><img src="image/Misaka.jpg" alt=" " class="logo"></a></h1>
+                </li> -->
+                <li class="headTab">
+                    <a href="">Matrix 社区</a>
+                    <ul class="htabBottom">
+                        <li><a href="">社区广场</a></li>
+                        <li><a href="">一派</a></li>
+                    </ul>
+                </li>
+                <li class="headTab"><a href="">付费订阅</a></li>
+                <li class="headTab">
+                    <a href="">特别策划</a>
+                    <ul class="htabBottom">
+                        <li>aaaaa</li>
+                        <li>bbb</li>
+                    </ul>
+                </li>
+                <li class="headTab"><a href="">Pi Store</a></li>
+                <li class="headTab"><a href="">Tron 计划</a></li>
+                <!-- <li><button class="btn">登录</button></li> -->
+            </ul>
+            <!-- <div class="htabBottom">
+                <ul>
+                    <li class="headLi1"><a href=""></a></li>
+                    <li class="headLi2"><a href=""></a></li>
+                </ul>
+            </div> -->
+
+        </div>
+
+        <!-- 头部横幅 -->
+        <div class="hbg">
+            <img src="image/headBG1.jpg" alt=" ">
+            <img src="image/headBG2.jpg" alt=" ">
+            <img src="image/headBG3.jpg" alt=" ">
+            <img src="image/headBG4.jpg" alt=" ">
+        </div>
+
+        <div class="banner">
+            <ul class="fun">
+                <li><a href=""><img src="image/fun1.jpg" alt=" " class="fimg"></a></li>
+                <li><a href=""><img src="image/fun2.jpg" alt=" " class="fimg"></a></li>
+                <li><a href=""><img src="image/fun3.jpg" alt=" " class="fimg"></a></li>
+                <li><a href=""><img src="image/fun4.jpg" alt=" " class="fimg"></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 中间 -->
+    <div id="main">
+
+
+        <!-- 主要内容 -->
+        <div id="index-page">
+
+            <!-- 文章上方的tab栏 -->
+            <div class="maintab">
+                <ul></ul>
+                <li><a href="">推荐</a></li>
+                <li><a href="">最热</a></li>
+                <li><a href="">科技</a></li>
+                <li><a href="">软件</a></li>
+                <li><a href="">生活</a></li>
+                <li><a href="">新闻</a></li>
+                </ul>
+            </div>
+
+            <!-- 文章显示区域 -->
+            <div class="mainpage">
+                <div class="post">
+                    <a href="detail.html"><img src="image/postBG1.jpg" alt=" " class="postbg"></a>
+                    <!-- 文章标题 -->
+                    <div class="postt">
+                        <a href="detail.html">
+                            <h2 class="title">本周看什么 | 最近值得一看的 6 部作品</h2>
+                        </a>
+                    </div>
+                    <!-- 文章下方 -->
+                    <div class="postd">
+                        <span class="data">2020/02/02</span>
+                        <a href="" class="tag">#疫情</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="image/postBG2.jpg" alt=" " class="postbg">
+                    <!-- 文章标题 -->
+                    <div class="postt">
+                        <a href="">
+                            <h2 class="title">戴口罩很重要：北京通报一例长期不戴口罩确诊病例</h2>
+                        </a>
+                    </div>
+                    <!-- 文章下方 -->
+                    <div class="postd">
+                        <span class="data">2020/02/02</span>
+                        <a href="" class="tag">#疫情</a>
+                    </div>
+                </div>
+
+
+
+                <div class="post">
+                    <img src="image/postbg3.jpg" alt=" " class="postbg">
+                    <!-- 文章标题 -->
+                    <div class="postt">
+                        <a href="">
+                            <h2 class="title">国产高能离子注入机成功实现百万电子伏特高能离子加速</h2>
+                        </a>
+                    </div>
+                    <!-- 文章下方 -->
+                    <div class="postd">
+                        <span class="data">2020/02/02</span>
+                        <a href="" class="tag">#科技</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="image/postBG4.jpg" alt=" " class="postbg">
+                    <!-- 文章标题 -->
+                    <div class="postt">
+                        <a href="">
+                            <h2 class="title">首次“搬上云端”的世界智能大会带给我们哪些启示？</h2>
+                        </a>
+                    </div>
+                    <!-- 文章下方 -->
+                    <div class="postd">
+                        <span class="data">2020/02/02</span>
+                        <a href="" class="tag">#智能</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="image/postBG5.jpg" alt=" " class="postbg">
+                    <!-- 文章标题 -->
+                    <div class="postt">
+                        <a href="">
+                            <h2 class="title">如何拥抱智能时代？</h2>
+                        </a>
+                    </div>
+                    <!-- 文章下方 -->
+                    <div class="postd">
+                        <span class="data">2020/02/02</span>
+                        <a href="" class="tag">#智能</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 翻页 -->
+            <div class="change">
+                1&nbsp;
+                <a href="">2</a>&nbsp;
+                <a href="">3</a>&nbsp;
+                <a href="">NEXT></a>
+            </div>
+
+        </div>
+
+        <!-- 侧边栏 -->
+        <div id="sidebar">
+            <!-- 头像 -->
+            <img src="image/Misaka.jpg" alt=" " class="avator">
+            <!-- 账户名 -->
+            <div class="name">江海寄余生</div>
+            <div class="signature">长恨此身非我有，何时忘却营营。夜阑风静縠纹平。小舟从此逝，江海寄余生。</div>
+
+            <ul class="news">
+                <li><a href=""><img src="image/news3.jpg" alt=" " class="nimg"></a></li>
+                <li><a href=""><img src="image/news2.jpg" alt=" " class="nimg"></a></li>
+                <li><a href=""><img src="image/news1.jpg" alt=" " class="nimg"></a></li>
+            </ul>
+            <!-- 评论 -->
+            <ul class="discuss">
+                <li class="item">
+                    <a href=""><img src="image/Misaka.jpg" alt=" " class="davator"></a>
+                    <div class="dmain">
+                        <div class="dname">我是谁</div>
+                        <div class="dtxt">
+                            中国制造 Tesla Model 3 长续航体验
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href=""><img src="image/Misaka.jpg" alt=" " class="davator"></a>
+                    <div class="dmain">
+                        <div class="dname">我在哪</div>
+                        <div class="dtxt">
+                            如何用内容分享打造你的影响力？
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href=""><img src="image/Misaka.jpg" alt=" " class="davator"></a>
+                    <div class="dmain">
+                        <div class="dname">SandBox</div>
+                        <div class="dtxt">
+                            如何优雅的使用 Edge 浏览器？这 12 款扩展程序墙烈推荐！
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+
+        <ul class="social">
+            <li><a href=""><img src="image/icon_qq.png" alt=" "></a></li>
+            <li><a href=""><img src="image/icon_WeChat.png" alt=" "></a></li>
+            <li><a href=""><img src="image/icon_sina.png" alt=" "></a></li>
+            <li><a href=""><img src="image/icon_twitter.png" alt=" "></a></li>
+        </ul>
+        <ul class="something">
+            <li><a href="">联系我们</a></li>
+            <li><a href="">商务合作</a></li>
+            <li><a href="">成为作者</a></li>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">用户协议</a></li>
+            <li><a href="">常见问题</a></li>
+        </ul>
+        <span class="license">© 2013-2020 少数派 | 粤ICP备09128966号-4 | CC BY-NC 4.0</span>
+    </div>
+
+</body>
+
+</html>

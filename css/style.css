@@ -1,0 +1,880 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#header, #main, #footer {
+    width: 1000px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+#header {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+#detailHeader {
+    width: 100%;
+    height: 425px;
+    margin-bottom: 50px;
+}
+
+/* .htab {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2;
+    position: fixed;
+    line-height: 60px;
+    overflow: hidden;
+    top: 0;
+} */
+
+.htab {
+    width: 100%;
+    line-height: 60px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    position: fixed;
+    z-index: 2;
+  }
+
+.htab li {
+    background-image: url(imgs/libg.jpg);
+}
+
+.htab ul li {
+    float: left;
+    margin-right: 10px;
+    /* position: relative; */
+}
+
+.htab a {
+    display: block;
+    height: 30px;
+    width: 100px;
+    text-decoration: none;
+    color: #000;
+    line-height: 30px;
+    text-align: center;
+}
+
+.htab li ul {
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+
+.htab .htabTop {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 
+.htab li {
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+} */
+
+/* .htabTop li:first-child {
+    margin-right: 150px;
+    padding-left: 0;
+}
+
+.htabTop li:last-child {
+    margin-left: 150px;
+    padding-right: 0;
+} */
+
+.htab a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.htab a:visited {
+    color: white;
+}
+
+.htab a:hover {
+    color: orangered;
+}
+
+.htab a:active {
+    color: crimson;
+}
+
+/* .logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    display: block;
+    margin-top: 7.5px;
+}
+
+.btn {
+    background-color: red;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 180px;
+    height: 35px;
+    width: 70px;
+    outline: none;
+}
+*/
+.htabBottom {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(167, 167, 167, 0.1);
+    display: none;
+    position: absolute;
+    left: 0;
+}
+/*
+.htabBottom ul {
+    width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+} */
+
+.hbg {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.hbg img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.banner {
+    width: fit-content;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 345px;
+    margin-left: -500px;
+}
+
+.fun {
+    height: 150px;
+    width: fit-content;
+}
+
+.fun li {
+    list-style: none;
+    float: left;
+    width: 220px;
+    height: 150px;
+    margin-right: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 3px rgba(88, 88, 88, 0.5);
+}
+
+.fimg {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.5s;
+    position: relative;
+}
+
+.fimg:hover {
+    height: 170px;
+    margin-top: -10px;
+}
+
+#main {
+    overflow: hidden;
+    width: 1000px;
+}
+
+#index-page {
+    width: 685px;
+    float: left;
+    margin-right: 34px;
+    overflow: hidden;
+}
+
+.maintab {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font: 15px;
+    color: grey;
+    text-align: left;
+    line-height: 50px;
+}
+
+.maintab li {
+    list-style: none;
+    display: inline;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.maintab a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+.maintab a:visited {
+    color: grey;
+}
+
+.maintab a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.maintab a:active {
+    color: red;
+}
+
+.mainpage {
+    width: 100%;
+    height: 1000px;
+}
+
+.post {
+    width: 675px;
+    height: 180px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgb(223, 223, 223);
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.postbg {
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+    float: left;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.post:hover .postbg {
+    width: 325px;
+}
+
+.postt {
+    width: 325px;
+    height: 80px;
+    float: left;
+    overflow: hidden;
+}
+
+.postt a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.postt a:visited {
+    color: black;
+}
+
+.postt a:hover {
+    color: red;
+}
+
+.postt a:active {
+    color: crimson;
+}
+
+.postd {
+    width: 325px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.title {
+    margin: 15px 25px 0px 25px;
+    font-size: 21px;
+    line-height: 35px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.data {
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    color: grey;
+}
+
+.tag {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+}
+
+.postd a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+.postd a:visited {
+    color: grey;
+}
+
+.postd a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.postd a:active {
+    color: grey;
+}
+
+.change {
+    height: 10px;
+    width: 675px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px auto;
+    /* float: left; */
+}
+
+.change a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+.change a:visited {
+    color: grey;
+}
+
+.change a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.change a:active {
+    color: grey;
+}
+
+#sidebar {
+    width: 275px;
+    float: left;
+    text-align: center;
+    margin-top: 60px;
+    /* margin-left: 33px; */
+    box-shadow: 2px 2px 10px rgb(233, 233, 233);
+    border-radius: 5px;
+}
+
+.avator {
+    width: 175px;
+    height: 175px;
+    margin-top: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(177, 177, 177);
+    transition: 0.75s
+}
+
+.avator:hover {
+    transform: rotate(360deg);
+}
+
+.name {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.signature {
+    font-size: 13px;
+    color: grey;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 255px;
+    margin: 10px 10px 0px 10px;
+}
+
+.news {
+    margin-top: 20px;
+    width: 275px;
+    list-style: none;
+}
+
+.nimg {
+    margin: 0px 15px 20px 15px;
+    width: 235px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.discuss {
+    width: 255px;
+    height: 255px;
+    background-color: white;
+    overflow: hidden;
+    margin: 5px 10px 0px 10px;
+}
+
+.item {
+    height: 75px;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.davator {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    float: left;
+    border-radius: 50%;
+}
+
+.dmain {
+    width: 215px;
+    height: 75px;
+    float: left;
+    margin-left: 10px;
+}
+
+.dname {
+    height: 30px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.dtxt {
+    color: grey;
+    text-align: left;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    font-size: 14px;
+    line-height: 21px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* #main:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+} */
+
+#footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.social {
+    float: left;
+    margin-right: 320px;
+}
+
+.social li {
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.something {
+    float: right;
+    line-height: 22px;
+}
+
+.something li {
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.something a:link, .something a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.something a:hover, .something a:active {
+    color: red;
+}
+
+.license {
+    float: right;
+    font-size: 12px;
+    color: rgb(88, 88, 88);
+    padding-top: 10px;
+}
+
+.bannerBG {
+    width: 100%;
+    height: 300PX;
+    background: rgb(244, 244, 244);
+}
+
+.bannerBG img {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+#detailIndex {
+    width: 685px;
+    float: left;
+    margin-right: 34px;
+    overflow: hidden;
+}
+
+#detailIndex h2:first-child {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.update {
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.detAuthor {
+    width: 150px;
+    line-height: 30px;
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+.update img {
+    margin-right: 10px;
+    display: block;
+}
+
+.updatetime {
+    float: right;
+    line-height: 30px;
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+#detailIndex ul, p {
+    list-style: disc;
+    /* list-style-type: disc; */
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#detailIndex iframe {
+    margin-top: 30px;
+}
+
+#comment {
+    width: 100%;
+    /* height: 300px; */
+    overflow: hidden;
+    background: rgb(244, 244, 244);
+}
+
+#comment span {
+    display: block;
+    text-align: center;
+    color: rgb(88, 88, 88);
+    /* padding-top: 0px;     */
+    font-size: 18px;
+}
+
+#comment span {
+    display: block;
+    color: rgb(88, 88, 88);
+    margin: 35px auto;
+    font-size: 18px;
+}
+
+.comIn {
+    width: 680px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+
+.comIn input {
+    width: 535px;
+    height: 50PX;
+    border: 0;
+    outline: none;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+}
+
+.conInleft {
+    font-size: 16px;
+    color: black;
+    padding: 0 20px;
+}
+
+.comIn .comBtn {
+    width: 80px;
+    height: 40px;
+    background-color: red;
+    background: red;
+    border-radius: 18px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.comAvator {
+    width: 45px;
+    height: 45px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.comment {
+    width: 680px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+
+.comName {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+.comTxt {
+    padding-left: 65px;
+    line-height: 30px;
+    color: rgb(88, 88, 88);
+}
+
+.comNo {
+    width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 20px 20px;
+    margin-bottom: 35px;
+    color: rgb(185, 185, 185);
+    font-size: 14px;
+}
+
+#listMain {
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    overflow: hidden;
+}
+
+#listHeader {
+    width: 100%;
+}
+
+.listHead {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 25px 30px;
+    line-height: 36px;
+}
+
+.listHead span {
+    font: bold 22px YouYuan;
+}
+
+.listBtn1 {
+    float: right;
+}
+
+.listHead input {
+    width: 80px;
+    height: 36px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 36px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.listHead input:last-child {
+    background-color: rgb(244, 244, 244);
+    color: black;
+}
+
+#listMain h2 {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 25px 0;
+}
+
+.listRun {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.runLeft {
+    padding: 30px 300px 30px 50px;
+    background-color: white;
+    width: 550px;
+    float: left;
+    border-radius: 15px;
+}
+
+.runLeft dt {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.runLeft dd {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 25px;
+}
+
+.runLeft input {
+    width: 125px;
+    height: 45px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 23px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.runLeft a:link {
+    text-decoration: none;
+}
+
+.runLeft a:visited {
+    color: black;
+}
+
+.runLeft dd a:visited {
+    color: rgb(88, 88, 88);
+}
+
+.runRight {
+    width: 315px;
+    height: 215px;
+    position: absolute;
+    display: block;
+    left: 685px;
+    top: 20px;
+    border-radius: 15px;
+}
+
+.listMainx {
+    width: 255px;
+    height: 170px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(88, 88, 88, 0)), url(../image/main1.jpg) no-repeat;
+    background-size: cover;
+    padding: 15px 25px 25px;
+    border-radius: 15px;
+    float: left;
+    margin-right: 42.5px;
+    margin-bottom: 45px;
+}
+
+.listMainx input {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 70px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 17px;
+    margin-bottom: 65px;
+}
+
+.listMainx span {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.listMainx span:last-child {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.listMain2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(88, 88, 88, 0)), url(../image/main2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.listMain3 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(88, 88, 88, 0)), url(../image/main3.jpg) no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+
+.listMain4 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(88, 88, 88, 0)), url(../image/main4.jpg) no-repeat;
+    background-size: cover;
+}
+
+.listMain5 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(88, 88, 88, 0)), url(../image/main5.jpg) no-repeat;
+    background-size: cover;
+}
+
+.listMain6 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(88, 88, 88, 0)), url(../image/main6.jpg) no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+
+.listMainSP {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(88, 88, 88, 0)), url(../image/mainSP.jpg) no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.listDown {
+    display: block;
+}
+
+.update a:link {
+    text-decoration: none;
+}
